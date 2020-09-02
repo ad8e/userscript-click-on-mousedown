@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name		 Click on mousedown
+// @name	Click on mousedown
 // @version	1
-// @grant		none
+// @grant	none
 // ==/UserScript==
 
 var lastClick = 0;
@@ -11,7 +11,6 @@ window.addEventListener("click", function(e) {
 		e.stopImmediatePropagation();
 	}
 }, true);
-
 
 window.addEventListener("mousedown", function(e) {
 	if (e.button !== 0) return;
@@ -24,6 +23,3 @@ window.addEventListener("mousedown", function(e) {
 	e.target.click();
 	lastClick = Date.now();
 });
-
-//breaks virustotal
-//breaks image viewer in firefox. clicks zoom in on the top of the image
