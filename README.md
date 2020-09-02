@@ -1,4 +1,4 @@
-Makes most clicks about 100 ms faster. (Hence, pages load about 100 ms faster.)
+Makes most clicks about 100 ms faster. Hence, pages load about 100 ms faster. Only tested on Firefox.
 
 It suppresses the button up-release to prevent double triggering, but only if you let go of the button within 200 ms.
 
